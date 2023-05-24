@@ -1,0 +1,49 @@
+:root {
+ --light-blue: #adccc7;
+ --navy-blue: #144c52;
+ --dark-green: #053220;
+ --nice-orange: #d34c26;
+}
+
+
+body {
+    background-color: var(--light-blue);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: var(--navy-blue);
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 5px;
+}
+
+.quiz {
+    background-color: var(--nice-orange);
+    position:fixed
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.answeres {
+    border-color: var(--dark-green);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    border-color: var(--nice-orange);
+    width: 50%;
+}
+
