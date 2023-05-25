@@ -1,9 +1,15 @@
+
+
+
 :root {
  --light-blue: #adccc7;
  --navy-blue: #144c52;
  --dark-green: #053220;
  --nice-orange: #d34c26;
 }
+
+
+
 
 
 body {
@@ -14,36 +20,62 @@ body {
 header {
     background-color: var(--navy-blue);
     text-align: center;
-    font-size: 30px;
-    line-height: 60px;
-    padding: 5px;
+    font-size: 4rem;
+    line-height: 80px;
+    color: white;
 }
 
-.quiz {
-    background-color: var(--nice-orange);
-    position:fixed
+h2 {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100vh;
     width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    border: 10px;
+    margin: 50px;
+
 }
 
-.answeres {
-    border-color: var(--dark-green);
-    position: relative;
+
+.question {
+    background-color: var(--nice-orange);
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
     text-align: center;
-    gap: 20px;
+    height: 100vh;
+    width: 50%;
+    padding: 20px;
+    margin: 50px;
+    border: 10px;
+    
 }
 
+
+button {
+    background-color: var(--dark-green);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 
 footer {
-    position: fixed;
+    background-color: var(--navy-blue);
+    width: 100%;
     display: flex;
-    justify-content: center;
-    border-color: var(--nice-orange);
-    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
-
+}
+fal fa-bookmark {
+    position: absolute;
+}
+}
