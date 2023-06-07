@@ -1,81 +1,90 @@
+@import "./global.css";
 
-
+  @import "./components/bookmark/bookmark.css";
+@import "./components/card-list/card-list.css";
+@import "./components/card/card.css";
+@import "./components/header/header.css";
+@import "./components/navigation/navigation.css";
+@import "./components/profile/profile.css";
+@import "./components/counter-list/counter-list.css";
+  
+/* 
 
 :root {
- --light-blue: #adccc7;
- --navy-blue: #144c52;
- --dark-green: #053220;
- --nice-orange: #d34c26;
-}
-
-
-
-
-
-body {
-    background-color: var(--light-blue);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header {
-    background-color: var(--navy-blue);
-    text-align: center;
-    font-size: 4rem;
-    line-height: 80px;
-    color: white;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    flex-direction: column;
-    gap: 20px;
-    border: 10px;
-    margin: 50px;
-
-}
-
-
-.question {
-    background-color: var(--nice-orange);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 50%;
-    padding: 20px;
-    margin: 50px;
-    border: 10px;
-    
-}
-
-
-button {
-    background-color: var(--dark-green);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-footer {
-    background-color: var(--navy-blue);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-}
-fal fa-bookmark {
-    position: absolute;
-}
-}
+    --light-blue: #adccc7;
+    --navy-blue: #144c52;
+    --dark-green: #053220;
+    --nice-orange: #d34c26;
+   }
+   
+   
+   
+   
+   
+   body {
+       background-color: var(--light-blue);
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   
+   header {
+       background-color: var(--navy-blue);
+       text-align: center;
+       font-size: 4rem;
+       line-height: 80px;
+       color: white;
+   }
+   
+   h2 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       height: 100vh;
+       width: 50%;
+       flex-direction: column;
+       gap: 20px;
+       border: 10px;
+       margin: 50px;
+   
+   }
+   
+   
+   .question {
+       background-color: var(--nice-orange);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       height: 100vh;
+       width: 50%;
+       padding: 20px;
+       margin: 50px;
+       border: 10px;
+       
+   }
+   
+   
+   button {
+       background-color: var(--dark-green);
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+     }
+   
+   footer {
+       background-color: var(--navy-blue);
+       width: 100%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 20px;
+   }
+   
+   fal fa-bookmark {
+       position: absolute;
+   }
+    */

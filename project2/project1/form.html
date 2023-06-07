@@ -9,49 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="./form.js" defer></script>
     <script src="./index.js" defer></script>
     <title>Quiz App</title>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__title">Profile</h1>
+        <h1 class="header__title">Skippy Quiz</h1>
     </header>
-    <main class="profile">
-        <div class="profile__card">
-            <img class="profile__card-img"
-                src="https://img.pixers.pics/pho_wat(s3:700/FO/50/52/38/42/700_FO50523842_2ad2f3dc1411569fda8d77519e58d639.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/aufkleber-cavalier-king-charles-spaniel-hund-portrat.jpg.jpg"
-                alt="" height="200" width="200" />
-            <h2 class="profile-card__name">Skippy Gluska</h2>
-        </div>
-        <h3>About me</h3>
-        <p>
-            Hello! I'm Skippy and I am too cute.<br>
-            I am 11 years old. my hobbies are sleeping, eating and cuddling<br>
-            if you want to be my friend, please bring me a snack first
-        </p>
-        <ul class="counter-list">
-            <li class="counter-list__item">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 48 48">
-                    <path
-                        d="M21.55 31.5q.05-3.6.825-5.25.775-1.65 2.925-3.6 2.1-1.9 3.225-3.525t1.125-3.475q0-2.25-1.5-3.75t-4.2-1.5q-2.6 0-4 1.475T17.9 14.95l-4.2-1.85q1.1-2.95 3.725-5.025T23.95 6q5 0 7.7 2.775t2.7 6.675q0 2.4-1.025 4.35-1.025 1.95-3.275 4.1-2.45 2.35-2.95 3.6t-.55 4Zm2.4 12.5q-1.45 0-2.475-1.025Q20.45 41.95 20.45 40.5q0-1.45 1.025-2.475Q22.5 37 23.95 37q1.45 0 2.475 1.025Q27.45 39.05 27.45 40.5q0 1.45-1.025 2.475Q25.4 44 23.95 44Z" />
-                </svg>
-                <span>8</span>
-            </li>
-            <li class="counter-list__item">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px" fill="#000000">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-                </svg>
-                <span>4</span>
-            </li>
-        </ul>
-        <h2 id="title">Settings</h2>
-        <form class="profile__settings" aria-labelledby="title">
-            <input type="checkbox" id="switch-darkmode" class="profile__settings-darkmode-input" />
-            <label for="switch-darkmode" class="profile__settings-darkmode-label">Toggle Darkmode</label>
+    <br></br>
+    <br></br>
+    <br></br>
+    <main>
+        <form data-js="form" id="cardForm">
+            <!-- <br aria-labelledby="title" aria-describedby="form-description"> -->
+            <fieldset aria-labelledby="your question" type="yourQuestion">
+                <legend id="yourQuestion">your question:</legend>
+                <textarea name="yourQuestion" maxlength="150" data-js="question"></textarea>
+                <span name="doesntWork" data-js="questionCharacters">150 characters left</span>
+            </fieldset>
+            <br></br>
+            <fieldset aria-labelledby="your answer">
+                <legend id="yourAnswer">your answer:</legend>
+                <textarea name="yourAnswer" maxlength="150" data-js="answer"></textarea>
+                <span name="doesntWork2" data-js="answerCharacters">150 characters left</span>
+            </fieldset>
+            <br></br>
+            <fieldset aria-labelledby="tag">
+                <label for="tag">Tag:</label>
+                <input type="text" name="tag" id="tag" maxlength="20" data-js="tag" />
+                <span name="doesntWork3" data-js="tagCharacters">20 characters left</span>
+            </fieldset>
+            <br></br>
+            <div>
+                <input type="submit" value="submit" />
+            </div>
+
+
         </form>
     </main>
+
     <nav class="navigation">
         <ul class="navigation__list">
             <li class="navigation__list-item navigation__list-item--active">
@@ -87,3 +85,23 @@
 </body>
 
 </html>
+
+
+<!-- <main class="main" id="main" data-js="main">
+
+    <a href="#">huh</a><br />
+
+
+    <form data-js="form" id="form1" name="moshe">
+        Write your name
+        <input type="text" id="name" name="firstName"> <br />
+        Write your age
+        <input type="text" id="age" name="age">
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</main>
+
+</html> -->
